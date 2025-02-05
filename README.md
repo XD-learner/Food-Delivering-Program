@@ -1,39 +1,74 @@
 # 🍔 Food Delivery Management System (Admin Side)<hr>
 ## 📌 Overview
-<p>This is a C++ terminal-based Food Delivery Management System designed for administrators to manage drivers and orders efficiently. The system allows admins to add, edit, delete, search, and assign orders to drivers</p><hr>
+> [!NOTE]
+> This is a simple C++ terminal-based program designed to help manage drivers and orders in a food delivery simulation. It's a basic prototype for educational purposes to practice managing orders and driver assignments.
+
+
 ## 🎯 Features
-<h3>📋 Order Management</h3>
-<ul>
-  <li>Add, update, delete, and search for food orders.</li>
-  <li>Track order status (Unassigned, Pending, Delivered).</li>
-  <li>Assign orders to available drivers.</li>
-</ul>
 
-<h3>🚗 Driver Management</h3>
-<ul>
-  <li>Add, update, and delete driver records.</li>
-  <li>Assign orders to drivers based on availability.</li>
-  <li>Track delivery performance.</li>
-</ul>
+### 📋 Order Management
 
-<h3>🔍 Filtering & Searching</h3>
-<ul>
-  <li>Search orders by Customer Name, Contact, Status, Driver Name, Order ID, etc.</li>
-  <li>Search drivers by Name, Status, Total Deliveries, etc.</li>
-</ul>
+- Add, update, delete, and search for food orders.
+- Track order status (Unassigned, Pending, Delivered).
+- Assign orders to available drivers.
 
-<h3>🏗 Technologies Used</h3>
-<ul>
-  <li>C++ (Standard Library)</li>
-  <li>
-      <ul>Data Structures:
-        <li>Linked Lists for storing orders and drivers</li>
-        <li>Queue for storing orders that are ready to be delivered.</li>
-      </ul>
-  </li>
-</ul>
 
-<h3>🚀 Installation & Usage
+### 🚗 Driver Management
+
+- Add, update, and delete driver records.
+- Assign orders to drivers based on availability.
+- Track delivery performance.
+
+### 🔍 Filtering & Searching
+
+- Search orders by Customer Name, Contact, Status, Driver Name, Order ID, etc.
+- Search drivers by Name, Status, Total Deliveries, etc.
+
+
+# 🚀 How It Works
+## 📌 1. Understanding Order and Driver Status
+### 🛒 Order Status:
+> #### 🟡 Unassigned – Order has been created but not yet verified.
+> #### 🟠 Pending – Order has been verified and placed in the queue, awaiting assignment.
+> #### 🚚 Delivering – Order has been assigned to a driver and is on its way.
+> #### ✅ Delivered – Order has been successfully completed.
+<br>
+
+### 🧑‍✈ Driver Status:
+> #### ✅ Available – The driver is ready to take new orders.
+> #### 🚛 Delivering – The driver is currently handling a delivery.
+> #### ❌ Offline – The driver is not available for assignments.
+<br>
+
+## 📖 2. System Usage
+### 🆕 1.Adding Orders
+- Admin creates new orders by entering customer details, order contents, and delivery addresses.
+- Newly created orders are stored in a linked list with the status "Unassigned."
+### 📥 2.Queue Placement
+- Admin verifies order details before placing them in the queue.
+- Once added, the order status changes to "Pending," meaning it's ready for assignment to a driver.
+### 📌 3.Assigning Orders
+- Admin selects orders from the queue and assigns them to drivers with the status "Available."
+- Once an order is assigned, the order status updates to "Delivering," and the driver’s status also updates to "Delivering."
+### 🔄 4.Updating Status
+- Once a driver completes a delivery, the admin marks the order as "Delivered."
+- The driver’s status is then updated back to "Available," indicating they can take new assignments.
+### 🛠️ 5.CRUD Operations
+- Admin can Create, Read, Update, and Delete orders and drivers as needed.
+### 🔍 6.Search Filters
+- A search feature is provided to quickly locate specific orders or drivers based on different criteria.
+---
+## 🏗 Technologies Used
+
+- C++ (Standard Library)
+- Data Structures:
+  - Linked Lists for storing orders and drivers
+  - Queue for storing orders that are ready to be delivered.
+- Algorithm
+  - Linear Search
+
+---
+## 🚀 Installation & Usage
 1️⃣ Clone the repository
 
 ```bash
@@ -47,4 +82,6 @@ g++ main.cpp -o food_delivery_system
 food_delivery_system
 
 ```
+
+
 
