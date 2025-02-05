@@ -73,7 +73,7 @@
 
 ```bash
 git clone https://github.com/XD-learner/Food-Delivering-Program.git
-cd cd food-delivering-program
+cd food-delivering-program
 
 ```
 2️⃣ Compile & Run
