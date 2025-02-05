@@ -1,8 +1,7 @@
-<h1>🍔 Food Delivery Management System (Admin Side)</h1><hr>
-<h2>📌 Overview</h2>
-<p>This is a C++ terminal-based Food Delivery Management System designed for administrators to manage drivers and orders efficiently. The system allows admins to add, edit, delete, search, and assign orders to drivers</p>
-<hr>
-<h2>🎯 Features</h2>
+# 🍔 Food Delivery Management System (Admin Side)<hr>
+## 📌 Overview
+<p>This is a C++ terminal-based Food Delivery Management System designed for administrators to manage drivers and orders efficiently. The system allows admins to add, edit, delete, search, and assign orders to drivers</p><hr>
+## 🎯 Features
 <h3>📋 Order Management</h3>
 <ul>
   <li>Add, update, delete, and search for food orders.</li>
@@ -29,7 +28,7 @@
   <li>
       <ul>Data Structures:
         <li>Linked Lists for storing orders and drivers</li>
-        <li>Queue for storing orders that are ready to be assigned.</li>
+        <li>Queue for storing orders that are ready to be delivered.</li>
       </ul>
   </li>
 </ul>
@@ -37,8 +36,15 @@
 <h3>🚀 Installation & Usage
 1️⃣ Clone the repository
 
-<pre><code>git clone https://github.com/yourusername/food-delivery-system.git
-cd food-delivery-system</code></pre>
+```bash
+git clone https://github.com/XD-learner/Food-Delivering-Program.git
+cd food-delivery-system
 
+```
 
+```bash
+g++ main.cpp -o food_delivery_system
+food_delivery_system
+
+```
 
