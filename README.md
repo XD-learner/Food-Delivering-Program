@@ -76,7 +76,7 @@ git clone https://github.com/XD-learner/Food-Delivering-Program.git
 cd food-delivery-system
 
 ```
-
+2️⃣ Compile & Run
 ```bash
 g++ main.cpp -o food_delivery_system
 food_delivery_system
